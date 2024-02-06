@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+div{
+    display: block;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+
+@media only screen and (min-width: 600px) {
+    
+    .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+  }
+/*Header*/
+.icon{
+    margin-left: 20px;
+}
+
+.head{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/443881de-6e3c-4cbc-ac83-9e2a5affa6aa/NG-en-20240115-trifectadaily-perspective_alpha_website_small.jpg");
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-attachment: scroll;
+    height: auto;
+    max-height: fit-content;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: 0.4;
+}
+
+
+.header{
+    background: none;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*box-shadow: 5px 5px 5px gray;*/
+}
+
+.sign-up{
+    background: none;
+    color: white;
+    font-size: 10px;
+    background-color: red;
+    padding: 10px;
+    border: 0.05px black;
+    border-style: solid;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 75%;
+}
+
+.text{
+    background: none;
+    color: white;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.text1{
+    background: none;
+    font-size: 35px;
+    padding: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text2{
+    background: none;
+    margin: 20px 0px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.text3{
+    background: none;
+    margin: 20px 0px;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.email{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email{
+    background: none;
+    color: rgba(0, 0, 0, 40%);
+    text-align: left;
+    padding: 20px;
+    background: none;
+    align-items: center;
+    min-width: auto;
+    max-width: 471.333px;
+    margin: 0 50px 20px 50px;
+    border: white;
+    border-width: auto;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border-color: gray;
+    font-weight: bolder;
+}
+
+.start{
+    color: white;
+    background-color: red;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: auto;
+    cursor: pointer;
+}
+
+.enjoy{
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgba(rgb(46, 43, 43), rgb(40, 43, 40), rgb(26, 26, 31), 0.4);
+    color: white;
+    position: relative;
+    height: auto;
+    top: 437px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.enjoy1{
+    display: block;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgba(rgb(46, 43, 43), rgb(40, 43, 40), rgb(26, 26, 31), 0.4);
+    color: white;
+    position: relative;
+    height: auto;
+    top: 437px;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    float: left;
+}
+
+.enjoy2{
+    display: block;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgba(rgb(46, 43, 43), rgb(40, 43, 40), rgb(26, 26, 31), 0.4);
+    color: white;
+    position: relative;
+    height: auto;
+    top: 437px;
+    box-sizing: border-box;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: right;
+}
+
+.enjoy h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.img-enjoy{
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    .head{
+        margin-bottom: 50px;
+    }
+    
+    .text{
+        margin-top: 20%;
+    }
+
+    .email{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    #email{
+        padding: 15px;
+    }
+
+    .start{
+        width: auto;
+        height: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .text1{
+        padding-right: 10px;
+        margin-top: -10%;
+        padding-bottom: 5%;
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .enjoy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        top: 561px;
+    }
+}

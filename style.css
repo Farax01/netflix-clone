@@ -29,58 +29,27 @@ div{
 .col-12 {width: 100%;}
   }
 /*Header*/
-.icon{
-    margin-left: 20px;
+.head{ 
+    
+     
+    /* height: auto; 
+    
+    background-repeat: no-repeat;*/
 }
 
-.head{
-    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/443881de-6e3c-4cbc-ac83-9e2a5affa6aa/NG-en-20240115-trifectadaily-perspective_alpha_website_small.jpg");
-    width: 100%;
-    display: block;
-    position: absolute;
-    background-attachment: scroll;
-    height: auto;
-    max-height: fit-content;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
-    background-position: center;
-    background-color: 0.4;
-}
-
-
-.header{
-    background: none;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*box-shadow: 5px 5px 5px gray;*/
-}
-
-.sign-up{
-    background: none;
-    color: white;
-    font-size: 10px;
-    background-color: red;
-    padding: 10px;
-    border: 0.05px black;
-    border-style: solid;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 75%;
+.sign-up-text{
+    height: 35px;
+    width: 80px;
 }
 
 .text{
     background: none;
     color: white;
-    padding-bottom: 0;
     align-items: center;
 }
 
 .text1{
     background: none;
-    font-size: 35px;
     padding: 5%;
     padding-bottom: 2%;
     margin-bottom: 0;
@@ -246,3 +215,8 @@ div{
         top: 561px;
     }
 }
+
+.netflix{
+    width: 100px;
+}
+

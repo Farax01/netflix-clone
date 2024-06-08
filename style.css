@@ -29,13 +29,30 @@ div{
 .col-12 {width: 100%;}
   }
 /*Header*/
-/* .head{ 
-    
-     
-    /* height: auto; 
-    
-    background-repeat: no-repeat;*/
-} */
+.bg-image-gradient {
+    position: relative;
+    overflow: hidden; /* Ensure pseudo-element stays within parent */
+    height: 100%; /* Adjust as needed */
+}
+.bg-image-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/443881de-6e3c-4cbc-ac83-9e2a5affa6aa/NG-en-20240115-trifectadaily-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.bg-image-gradient .content {
+    position: relative;
+    z-index: 2; /* Place content above the gradient and image */
+    color: white; /* Adjust text color for visibility */
+    padding: 20px; /* Adjust padding as needed */
+}
 
 .sign-up-text{
     height: 35px;
@@ -79,6 +96,7 @@ div{
     background: none;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -112,52 +130,19 @@ div{
     cursor: pointer;
 }
 
-.enjoy{
+.enjoy,
+.downloads{
     border-top-style: solid;
     border-top-width: 5px;
     border-top-color: rgba(rgb(46, 43, 43), rgb(40, 43, 40), rgb(26, 26, 31), 0.4);
     color: white;
-    position: relative;
     height: auto;
-    top: 437px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     background-color: black;
     text-align: center;
     padding-top: 20px;
-}
-
-.enjoy1{
-    display: block;
-    border-top-style: solid;
-    border-top-width: 5px;
-    border-top-color: rgba(rgb(46, 43, 43), rgb(40, 43, 40), rgb(26, 26, 31), 0.4);
-    color: white;
-    position: relative;
-    height: auto;
-    top: 437px;
-    box-sizing: border-box;
-    background-color: black;
-    text-align: center;
-    padding-top: 20px;
-    float: left;
-}
-
-.enjoy2{
-    display: block;
-    border-top-style: solid;
-    border-top-width: 5px;
-    border-top-color: rgba(rgb(46, 43, 43), rgb(40, 43, 40), rgb(26, 26, 31), 0.4);
-    color: white;
-    position: relative;
-    height: auto;
-    top: 437px;
-    box-sizing: border-box;
-    background-color: black;
-    text-align: center;
-    padding-top: 20px;
-    justify-content: right;
 }
 
 .enjoy h1{
@@ -168,6 +153,12 @@ div{
 .img-enjoy{
     width: 100%;
 }
+
+
+.text-enjoy{
+    width: 500px;
+}
+
 
 @media only screen and (min-width: 600px) {
     .head{
@@ -207,16 +198,56 @@ div{
 }
 
 @media only screen and (min-width: 960px) {
+    .downloads{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     .enjoy{
+        padding: 7%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        top: 561px;
     }
+
+    .text-enjoy{
+        text-align: left;
+    }
+
+    .image-container{
+        margin: 0;
+    }
+
+    
 }
 
 .netflix{
     width: 100px;
 }
 
+.error-text{
+    margin-top: -20px;
+    padding-left: 8px;
+    font-size: 13px;
+    color: red;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%; /* Adjust as needed */
+    max-height: 90%; /* Adjust as needed */
+}
